@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TranslationView: View {
+    @Binding var englishText: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Translation of \(englishText)")
+            .font(.title)
+            .padding()
+        //translation here 
     }
-}
-
-#Preview {
-    TranslationView()
 }
